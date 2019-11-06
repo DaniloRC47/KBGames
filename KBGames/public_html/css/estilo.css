@@ -1,0 +1,586 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/09/2019, 13:39:47
+    Author     : Danilo
+*/
+
+body
+{
+    background-color: #1C1C1C;
+    font-family: "Arial";
+}
+
+#cabecalho
+{
+    width:auto;
+    height: 70px;
+    background-color: #363636;
+    /*margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px*/
+    position:fixed;
+    z-index: 1;
+    top: 0; left: 0;right: 0;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+#menu
+{
+    width: 1200px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo
+{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.logo img{padding-left: 10px;}
+
+.menu-superior
+{
+    width: 1000px;
+    height: 70px;
+    float: left;
+    font-weight: bold; 
+}
+
+.menu-superior ul{margin:0; padding: 0; float: left;}
+.menu-superior ul li{display: inline;}
+.menu-superior ul li a
+{
+    float: left; text-decoration: none;
+    color: white;
+    padding:37px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: -1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1C1C1C;
+
+}
+
+#texto
+{
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    height: 42px;
+    margin: 12px;
+    padding-left: 10px;
+    float: left;
+    /**background-image: url(lupa.png);
+    background-size: 25px;
+    background-position: 355px 8px;
+    background-repeat: no-repeat;**/
+    border: 0px; 
+    font-size: 17px;
+}
+::placeholder{color:white;}
+
+#container1
+{
+    width: 960px;
+    /*height: 1200px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+
+.slide
+{
+    width: 1040px;
+    height: 300px;
+    float: left;
+    margin-left: -40px;
+    margin-right: -40px;
+    position: static;
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+}
+
+#info-pag
+{
+    width: 960px;
+ 
+    margin-top: 20px;
+
+    float: left;
+}
+
+.cartao
+{
+    width: 318px;
+    height: 160px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1C1C1C;
+    border-radius: 5px;
+    float: left;
+    color:white;
+    background-color: #004466;
+}
+
+.cartao img
+{
+    float: left;
+    width: 280px;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+#games
+{
+    width: 960px;
+    margin-top: 20px;
+    float: left;
+
+}
+
+.capa
+{
+    align-items:baseline;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 300px;
+    height: 450px;
+    float: left;
+    background-color: gray;
+    border-style: none; 
+    border-radius: 4px;   
+}
+
+.capaGame
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 305px;
+    height: 100px;
+    background-color: #363636;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.capaGame:hover
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.capaGame img
+{
+    float: left;
+    width: 100px;
+}
+
+.descGame
+{
+    margin-top: 10px;
+    width: 170px;
+    float: left;
+    color: white;
+    padding: 10px;
+
+}
+
+#plataforma
+{
+    float: left;
+    width: 25px;
+    margin: 5px;
+}
+
+.precoGame
+{
+    float: right;
+    /**border-style: solid;
+    border-color: white;
+    border-width: 2px;**/
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: red;
+}
+
+.menu-inferior
+{
+    width: 960px;
+
+    margin-top: 10px;
+    float: left;
+}
+
+.menu-inferior ul{width:945px ; margin: auto;margin-bottom: -15px; padding: 5px; float: left;}
+.menu-inferior ul li{display: inline;}
+.menu-inferior ul li a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    margin-top: 200px;
+
+    font-size: 15px;
+    padding: 10px;
+
+}
+#idioma
+{
+    float: right;
+    border-style: solid;
+    border-width:  1px;
+    border-color: white;
+    border-radius: 4px;
+    padding:5px;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 15px;                           
+}
+hr
+{
+    color: white;
+    background-color: white;
+    height: 1px;
+}
+
+.redes-sociais
+{
+    width: 960px;
+    margin-top: 5px;
+    float: left;
+    color: white;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.redes-sociais ul{margin: 0; padding: 0; float: left;}
+.redes-sociais ul li{display: inline;}
+.redes-sociais ul li a
+{
+    float: left;text-decoration: none;
+    padding:10px;
+    font-size: 12px;  
+    margin-left: 50px;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 4px;
+
+
+}
+
+.facebook {float:left;}
+.facebook a.visited {text-decoration: none; color: white;}
+.facebook a:hover{color: white; background-color: #3C5A99;}
+.facebook .curret{color: white; background-color: #3C5A99;}
+
+.twitter{float:left;}
+.twitter a.visited {text-decoration: none; color: white;}
+.twitter a:hover{color: white; background-color: #1DA1F2;}
+.twitter .curret{color: white; background-color: #1DA1F2;}
+
+.instagram{float:left;}
+.instagram a.visited {text-decoration: none; color: white;}
+.instagram a:hover{color: white; background-color: #E1306C;}
+.instagram .curret{color: white; background-color: #E1306C;}
+
+
+#rodape
+{
+    width: 960px;
+
+    margin-top: 10px;
+    float: left;
+    background-color: #363636;
+    border-radius: 4px;
+}
+
+#direitos
+{
+    float: right;
+    padding: 20px;
+    font-size: 10px;
+    color: white;
+    text-align: right;   
+}
+
+
+.sobre
+{   
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding-bottom: 10px;
+}
+
+.infoDev
+{
+    float: left;
+    margin-left: 200px;
+    margin-top: 85px;
+    width: 225px;
+    background-color:  #004466;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+.infoDev:hover
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.infoDev img
+{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-left: -80px;
+    margin-top: -68px;
+}
+
+#infoDesc
+{
+    float: left;
+    margin-right: 250px;
+    margin: 10px;
+    padding-top: 10px;
+    color: white;
+}
+
+
+.gameDesc
+{
+    width: 960px;
+    float: left;
+    color: white;
+
+}
+
+.gameDesc img
+{
+    width: 300px;
+    float: left;
+}
+
+.gameDescNome
+{
+    float: left;
+    width: 600px;
+    height: 130px;
+
+    padding:  20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.gameDescNome ul{margin: 0;padding: 0;float: left; font-size: 15px;}
+.gameDescNome ul li
+{
+    display: inline;
+    float: left;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1C1C1C;
+    border-radius: 5px;
+    background-color: #363636;
+    margin: 10px;
+    margin-left: 0px;
+    padding-top: 8px;
+    padding-right: 10px;
+
+}
+
+#plataformaB
+{
+    float: left;
+    width: 25px;
+    margin: 5px;
+    margin-top: -3px;
+}
+
+iframe
+{
+    float: left;
+    width: 635px;
+    height: 370px;
+    padding: 0;
+    border: none;
+    margin-top: 20px;
+}
+
+.infoGame
+{
+    float: right;
+    width: 300px;
+    background-color:#363636;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.infoGamePreco
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.infoGamePreco ul{margin: 0;padding: 0;float: right;}
+.infoGamePreco ul li
+{
+    font-size: 17px;
+    display: inline;
+    float: right;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+
+
+.infoGameMore
+{
+    font-size: 17px;
+    color: white;
+    padding: 20px;
+    padding-top: 10px; 
+}
+
+.infoGameMore ul{margin: 0;padding: 0;float: left   ;}
+.infoGameMore ul li
+{
+    font-size: 12px;
+    display: inline;
+    float: left;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.infoGameMore img
+{
+    margin-top: -3px;
+    padding-right:  10px;
+    margin-right: 3px;
+    width: 25px;
+    float: left;
+}
+.requisitos
+{
+    float: left;
+    margin-top: 20px;
+    color: white;
+}
+
+.suporte
+{   
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    padding-left: 60px;
+}
+
+.dados{
+    float: left;
+    
+    width: 100%;
+}
+
+.entrar{
+    width: 400px;
+    min-height: 300px;
+    color: white;
+    font-size: 18px;
+    float: left;
+    padding: 37px;
+    margin: 1px;
+}
+
+#dadosDireita{
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+}
+
+#dadosEsquerda{
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 1px;
+}
+
+#branco{color: white;}
+
+.enviejogo{
+    width: 500px;
+    min-height: 400px;
+    color: white;
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.cart{
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    color: white;
+}
+
+#direita{
+    text-align: right;
+}
+
+.cartList{
+    float: left;
+    width: 640px;
+    min-height: 350px;
+    border-radius: 4px;
+    background-color:#363636;
+    margin-top: 20px;
+}
+
